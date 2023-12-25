@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build Index.html</title>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDcHMlA5uj0yBIBnsgIUs79ihR8LyndEvE",
+        authDomain: "maths-course-zaw.firebaseapp.com",
+        projectId: "maths-course-zaw",
+        storageBucket: "maths-course-zaw.appspot.com",
+        messagingSenderId: "936554161368",
+        appId: "1:936554161368:web:47899e49694042a8f4e3ad",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+    <!-- <script src="firebase.js"></script> -->
+    <!-- <script src="authenticate-google.js"></script> -->
+  </head>
+  <body>
+    <h1>Index of our website built from source</h1>
+
+    <script type="module">
+      import {
+        getAuth,
+        signInWithPopup,
+        GoogleAuthProvider,
+      } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+      // import { app } from "./firebase";
+
+      const provider = new GoogleAuthProvider();
+
+      const auth = getAuth();
+
+      const googleAuth = () => {
+        signInWithPopup(auth, provider)
+          .then((result) => {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            const credential = GoogleAuthProvider.credentialFromResult(result);
+            const token = credential.accessToken;
+            // The signed-in user info.
+            const user = result.user;
+            alert("success!");
+            // IdP data available using getAdditionalUserInfo(result)
+            // ...
+          })
+          .catch((error) => {
+            alert("failure");
+            // Handle Errors here.
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            // The email of the user's account used.
+            const email = error.customData.email;
+            // The AuthCredential type that was used.
+            const credential = GoogleAuthProvider.credentialFromError(error);
+            // ...
+          });
+      };
+
+      document.querySelector("button").addEventListener("click", googleAuth);
+    </script>
+    <button>Authenticate</button>
+  </body>
+</html>

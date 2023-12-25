@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student's progress</title>
+    <style>
+      body {
+        background-color: hsla(0, 25%, 98%, 0.8);
+      }
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 64px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main {
+        margin-top: 72px;
+      }
+      main {
+        display: grid;
+        grid-template-areas:
+          "head head"
+          "chapter1 chapter2"
+          "chapter3 chapter3";
+      }
+      main section {
+        /* background-color: hsla(0, 25%, 98%, 0.8); */
+        background-color: white;
+        box-shadow: -1px -1px 1px hsla(0, 0%, 88%, 0.8);
+        padding: 8px;
+        margin: 8px;
+        border-radius: 4px;
+        border: 1px solid hsla(0, 0%, 90%, 0.8);
+      }
+      main section h3 {
+        border-bottom: 1px solid #ddd;
+        padding: 4px;
+      }
+      main section ol {
+        min-width: 332px;
+        max-width: 380px;
+      }
+      main section li {
+        height: 32px;
+        /* border-bottom: 1px solid #ddd; */
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+        border-radius: 4px;
+      }
+      main section li:hover {
+        background-color: hsla(0, 25%, 95%, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>Student's Progress</h1></header>
+    <main>
+      <section style="grid-area: head">
+        <h2>John Doe</h2>
+        <span>Maths course 102</span>
+      </section>
+
+      <section style="grid-area: chapter1">
+        <h3>Number</h3>
+        <ol>
+          <li>
+            <span>A1 Number Calculations, Bodmas</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A2 Factors and Primes</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A3 Indices - Basic</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A4 Indices - Advanced</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A5 Fractions</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A6 Decimals</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A7 Estimation</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A8 Standard Form (Introduction)</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A9 Standard Form (calculations)</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A10 Recurring decimals</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A11 Bounds</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A12 Accuracy and Error</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A13 Surds</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A14 Counting Strategies</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>A15 Money problems</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+        </ol>
+      </section>
+
+      <section style="grid-area: chapter2">
+        <h3>Algebra 1</h3>
+        <ol>
+          <li>
+            <span>B1 Algebraic Expressions</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B2 Expanding Brackets</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B3 Factorising non-quadratics</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B4 Linear Equations, Rearranging</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B5 Rearranging equations (advanced)</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B6 Formulae</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B7 Arithmetic sequences</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B8 Fibonacci sequences</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B9 Quadratic sequences</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B10 Straight Line Graphs, Gradients</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>B11 Parallel and perpendicular lines</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li></li>
+        </ol>
+      </section>
+
+      <section style="grid-area: chapter3">
+        <h3>Algebra 2</h3>
+        <ol>
+          <li>
+            <span>C1a Factorising quadratics - no constant term</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C1b Factorising quadratics - full quadratics</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C1c Factorising quadratics - diff of 2 squares</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C2 Quadratic equations</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C3 Quadratic graphs</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C4 Cubic and Reciprocal Graphs</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C5 Real-life graphs</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C6 The Quadratic Formula</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C7 Completing the Square</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C8 Simultaneous Equations</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C9 Equation of a circle</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C10 Inequalities</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C11 Quadratic Inequalities</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C12 Trigonometric graphs</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C13 Transforming graphs</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C14 Inequalities on graphs</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C15 Using quadratic graphs</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C16 Turning Points</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C17 Summary of graph shapes</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+          <li>
+            <span>C18 Intersections of graphs</span>
+            <input type="checkbox" name="Chapter" id="chapter-1-number" />
+          </li>
+        </ol>
+      </section>
+    </main>
+    <footer>Maths classes by Zaw</footer>
+  </body>
+</html>
